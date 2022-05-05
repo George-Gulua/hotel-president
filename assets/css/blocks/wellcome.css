@@ -1,0 +1,28 @@
+.wellcome-info {
+    margin-top: 60px;
+    border: 1px solid var(--color-gold);
+    padding: 40px;
+    position: relative;
+}
+
+.wellcome-info h3 {
+    font-family: "Yeseva One";
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.wellcome-info p {
+    margin: 24px 0;
+    line-height: 1.5rem;
+}
+
+.wellcome-info h3,
+.wellcome-info p {
+    width: 70%;
+}
+
+.wellcom-img {
+    position: absolute;
+    right: -14%;
+    top: -35%;
+}

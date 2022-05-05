@@ -1,0 +1,21 @@
+main .rooms{
+    padding-top: 80px;
+}
+.rooms-booking{
+    border-top: 1px solid var(--color-gold);
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.booking-card{
+    margin: 40px 30px;
+    padding: 20px 20px;
+    background-image: url(/assets/images/room.png); 
+    background-size: cover;
+}
+
+.booking-info{
+    padding: 100px;
+    border: 1px solid var(--color-gold);
+}
