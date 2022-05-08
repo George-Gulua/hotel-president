@@ -1,0 +1,36 @@
+footer.footer {
+    background: #000;
+    margin-top: 60px;
+}
+
+.footer > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer > .container > :last-child {
+    font-size: 20px;
+    font-weight: 400;
+    border: 1px solid #fff;
+    padding: 12px 28px;
+    transition: .3s;
+}
+
+.footer > .container > :last-child:hover {
+    background: #fff;
+    color: var(--color-black)
+}
+
+.footer a {
+    color:#fff;
+    text-decoration: none;
+    font-size: 400;
+    padding: 12px 8px;
+}
+
+.footer p {
+    color:#fff;
+    font-weight: 150;
+}
