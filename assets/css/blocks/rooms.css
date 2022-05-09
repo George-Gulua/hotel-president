@@ -1,8 +1,8 @@
-main .rooms{
+main .rooms {
     padding-top: 80px;
 }
 
-.rooms-booking{
+.rooms-booking {
     border-top: 1px solid var(--color-gold);
     margin-top: 80px;
     display: flex;
@@ -10,20 +10,24 @@ main .rooms{
     flex-wrap: wrap;
 }
 
-.booking-card{
+.booking-card {
     margin: 40px 30px;
     padding: 30px 30px;
-    background-image: url(/assets/images/room-black.png); 
+    background-image: url('/assets/images/room-black.png'); 
     background-size: cover;
     flex-basis: 25%;
 }
 
-.booking-border{
+.booking-border {
     border: 1px solid var(--color-gold);
 }
 
+.booking-info {
+  position: relative;
+  padding: 30px 30px 25px
+}
+
 .booking-info h3 {
-  font-family: "Montserrat";
   font-size: 32px;
   font-weight: 400;
   color:var(--color-gold);
@@ -31,62 +35,47 @@ main .rooms{
   font-weight: 200;
 }
 
-.rooms-booking ul:{
-  list-style-image: url(/assets/images/ul-item.png);
-  padding-left:25px;
+.booking-info ul {
+  list-style: none;
 }
 
-.booking-info{
-  position: relative;
-  padding: 50px 50px 25px 50px;
+.booking-info ul li {
+  color: var(--color-gold);
+  margin-bottom: 25px;
+  font-weight: 300;
+  display: flex;
+  gap: 12px;
 }
 
-.booking-info:hover h3{
+.rooms-booking ul li::before {
+  content: '';
+  background: url('/assets/images/ul-item.png');
+  width: 16px;
+  height: 16px;
+  display: flex;
+}
+
+.booking-card h3,
+.booking-card ul,
+.booking-card button {
   transition: .3s;
+}
+
+.booking-card:hover h3,
+.booking-card:hover ul {
   opacity: 0;
 }
 
-.booking-info:hover ul{
-  transition: .3s;
-  opacity: 0;
-}
-
-.booking-info:hover button{
-  transition: .3s;
+.booking-card:hover button {
   opacity: 1;
 }
 
-.booking-info li{
-  color:var(--color-gold);
-  padding-bottom: 25px;
-  font-family: "Montserrat";
-  font-size: 16px;
-  font-weight: 100;
-}
-
-.btn-booking{
-  padding: 12px 60px;
-  opacity: 0;
+.booking-card button {
   position: absolute;
   top:50%;
   left:50%;
-  transform:translate(-50%, -50%);
-  font-size: 16px;
-  font-weight: 300px;
-  text-transform: uppercase;
-  cursor: pointer;
+  transform: translate(-50%, -50%);
+  opacity: 0;
 }
 
-.btn-booking._black {
-  border: 1px solid #000;
-  background: #000;
-  color: #fff;
-  transition: .3s;
-}
 
-.btn-booking._black:hover{
-  border: 1px solid #000;
-  background: #fff;
-  color: var(--color-gold);
-  transition: .3s;
-}

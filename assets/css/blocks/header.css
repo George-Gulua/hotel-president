@@ -56,3 +56,36 @@ header.header {
 .header .header-menu .active {
     border-bottom: 1px solid #fff;
 }
+
+@media screen and (max-width: 1440px) {
+    .header .container nav {
+        gap: 20px;
+    }
+    .header > .container > *:first-child,
+    .header > .container > *:last-child {
+    font-size: 18px;
+    padding: 12px 20px;
+    }
+}
+
+@media  screen and (max-width: 1200px) {
+    .header .container nav {
+        gap: 8px;
+        font-size: 12px;
+    }
+    .header > .container > *:first-child,
+    .header > .container > *:last-child {
+    font-size: 12px;
+    padding: 10px 12px;
+    }
+}
+
+@media  screen and (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+    }
+
+    .header .container nav {
+        margin: 10px 0px;
+    }
+}

@@ -1,34 +1,70 @@
-main .contacts{
-    padding-top: 80px;
-}
-
-.contacts-info{
-    border-top: 1px solid var(--color-gold);
+main .contacts {
     margin-top: 80px;
 }
 
-.contacts-data{
+.contacts-info {
     display: flex;
-    flex-direction: column;
-    margin: 160px 0px 20px 40px;
+    justify-content: space-between;
+    margin-top: 50px;
 }
 
-.contacts-block{
+.contacts-map {
+    width: fit-content;
+    max-width: 600px;
+}
+
+.contacts-data {
+    display: inline-flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 28px;
+}
+
+.contacts-wrapper {
     display: flex;
     align-items: center;
-    font-family: "Montserrat";
+    gap: 16px;
     font-size: 14px;
-    padding: 30px 0px;
 }
 
-.contacts-blocks{
+.contacts-wrapper img {
+    width: 47px;
+    height: 47px;
+}
+
+.contacts-number,
+.contacts-email {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    
+    flex-direction: column;
 }
 
-.contacts-map{
-    padding: 120px 40px 0px 30px; 
+@media screen and (max-width: 1200px) {
+    .contacts-info {
+        flex-direction: column;
+    }
 
+    .contacts-map {
+        margin-top: 30px;
+    }
+
+    .contacts-map,
+    .contacts-map iframe {
+        width: 100%;
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .contacts-info {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .contacts-wrapper span {
+        font-size: 10px;
+    }
+
+    .contacts-wrapper img {
+        display: none;
+    }
 }

@@ -37,7 +37,7 @@ main .container {
 }
 
 .btn {
-    padding: 12px 60px;
+    padding: 12px 50px;
     border: none;
     background: transparent;
     font-size: 16px;
@@ -53,7 +53,7 @@ main .container {
     transition: .3s;
 }
 
-.btn._black:hover{
+.btn._black:hover {
     border: 1px solid #000;
     background: #fff;
     color: var(--color-gold);
@@ -69,4 +69,22 @@ main .container {
 .btn._white:hover {
     background: var(--color-gold);
     color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    main .container {
+        padding: 0;
+    }
+    .wellcome-info {
+        border: none !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
 }
