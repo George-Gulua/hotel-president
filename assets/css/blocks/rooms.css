@@ -67,7 +67,7 @@ main .rooms {
 }
 
 .booking-card:hover button {
-  opacity: 1;
+  opacity: 0;
 }
 
 .booking-card button {
