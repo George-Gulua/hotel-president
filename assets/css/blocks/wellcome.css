@@ -17,14 +17,16 @@
 }
 
 .wellcome-info h3,
-.wellcome-info p {
+.wellcome-info > p {
     width: 70%;
 }
 
-.wellcom-img {
+.wellcome-img {
     position: absolute;
-    width: 500px;
-    height: 500px;
-    right: -20%;
+    right: -16%;
     top: -35%;
+}
+
+.wellcome-text p {
+   width: 100%;
 }
